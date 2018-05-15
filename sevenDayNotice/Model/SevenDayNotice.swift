@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-class sevenDayNotice: Object {
+class SevenDayNotice: Object {
   @objc dynamic var dateAdded: Date?
   @objc dynamic var residentNotified: Resident?
   var rules = List<Rule>()

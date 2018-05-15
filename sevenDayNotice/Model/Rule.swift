@@ -15,5 +15,5 @@ class Rule: Object {
   @objc dynamic var body = ""
   @objc dynamic var bulletPoint = ""
   @objc dynamic var solution = ""
-  var parentNotice = LinkingObjects(fromType: sevenDayNotice.self, property: "rules")
+  var parentNotice = LinkingObjects(fromType: SevenDayNotice.self, property: "rules")
 }

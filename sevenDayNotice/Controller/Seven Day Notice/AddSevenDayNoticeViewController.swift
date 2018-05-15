@@ -30,7 +30,7 @@ class AddSevenDayNoticeViewController: UIViewController {
   
   @IBAction func addSevenDayNotice(_ sender: Any) {
     
-    let notice = sevenDayNotice()
+    let notice = SevenDayNotice()
     
     guard let searchedResident = lotNumberTextfield.text else {
       print("please enter valid lot nummber")
@@ -55,8 +55,6 @@ class AddSevenDayNoticeViewController: UIViewController {
       print("Add items to notice")
     }
    
-    print(selectedRules ?? "No items selected yet")
-    
     saveNotice(notice: notice)
   }
   
@@ -95,7 +93,7 @@ extension AddSevenDayNoticeViewController: UITableViewDelegate, UITableViewDataS
     tableView.deselectRow(at: indexPath, animated: true)
   }
   
-  func saveNotice(notice: sevenDayNotice) {
+  func saveNotice(notice: SevenDayNotice) {
     do {
       try realm.write {
         realm.add(notice)

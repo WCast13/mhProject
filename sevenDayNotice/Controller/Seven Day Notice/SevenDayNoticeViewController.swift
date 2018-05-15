@@ -7,17 +7,32 @@
 //
 
 import UIKit
+import RealmSwift
 
 class SevenDayNoticeViewController: UIViewController {
-
+  
+  var noticesArray: Results<SevenDayNotice>?
+  let realm = try! Realm()
+  
+  
   @IBOutlet var noticeTableView: UITableView!
   
   override func viewDidLoad() {
-        super.viewDidLoad()
-
+    super.viewDidLoad()
+    
     navigationController?.navigationBar.isHidden = false
-      
-    }
+    
+    noticesArray = realm.objects(SevenDayNotice.self)
+    
+    let dateFormatter = DateFormatter()
+    
+    dateFormatter.dateStyle = .short
+    dateFormatter.timeStyle = .none
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    noticeTableView.reloadData()
+  }
   
   @IBAction func goToAddNotice(_ sender: Any) {
     performSegue(withIdentifier: "goToAddNotice", sender: self)
@@ -31,13 +46,17 @@ extension SevenDayNoticeViewController: UITableViewDataSource, UITableViewDelega
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 1
+    return noticesArray?.count ?? 1
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
     
-    cell.textLabel?.text = "\(indexPath.row)"
+    let date = noticesArray?[indexPath.row].dateAdded
+    let resident = noticesArray?[indexPath.row].residentNotified?.lotNumber
+    
+    let cellText = "\(date!): \(resident!)"
+    cell.textLabel?.text = cellText
     cell.textLabel?.textAlignment = .center
     
     return cell
