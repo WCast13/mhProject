@@ -129,6 +129,7 @@
                     <connections>
                         <outlet property="noticeTableView" destination="zQi-X0-qWc" id="Ifg-ln-itT"/>
                         <segue destination="9DJ-4J-pC1" kind="show" identifier="goToAddNotice" id="agH-tQ-PUT"/>
+                        <segue destination="Tik-VV-TAq" kind="show" identifier="goToViewNotice" id="P97-ZP-sxY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVF-qe-M80" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -225,6 +226,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zc3-fz-vC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2936.8000000000002" y="31.934032983508249"/>
+        </scene>
+        <!--View Notice AsHTML Controller-->
+        <scene sceneID="jqG-HU-LQG">
+            <objects>
+                <viewController id="Tik-VV-TAq" customClass="ViewNoticeAsHTMLController" customModule="sevenDayNotice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vSf-Yf-gzn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rue-jO-4Il">
+                                <rect key="frame" x="67" y="230" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ejd-jp-2Ar"/>
+                    </view>
+                    <connections>
+                        <outlet property="noticeWebView" destination="rue-jO-4Il" id="iZs-fF-6VE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m6h-SI-U9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2936.8000000000002" y="805.54722638680664"/>
         </scene>
         <!--Residents-->
         <scene sceneID="zDP-cT-DKt">
