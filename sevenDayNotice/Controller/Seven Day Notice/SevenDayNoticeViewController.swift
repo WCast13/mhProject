@@ -56,6 +56,7 @@ extension SevenDayNoticeViewController: UITableViewDataSource, UITableViewDelega
     let resident = noticesArray?[indexPath.row].residentNotified?.lotNumber
     
     let cellText = "\(date!): \(resident!)"
+    
     cell.textLabel?.text = cellText
     cell.textLabel?.textAlignment = .center
     

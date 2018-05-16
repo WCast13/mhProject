@@ -55,7 +55,12 @@ class AddSevenDayNoticeViewController: UIViewController {
       print("Add items to notice")
     }
    
-    saveNotice(notice: notice)
+    if notice.residentNotified != nil && numberOfItems > 0 {
+      saveNotice(notice: notice)
+    } else {
+      print("Please add resident and rules")
+    }
+    
   }
   
 }
@@ -86,6 +91,7 @@ extension AddSevenDayNoticeViewController: UITableViewDelegate, UITableViewDataS
     if let indexPath = tableView.indexPathForSelectedRow {
       let selectedRule = rulesArray?[indexPath.row]
       selectedRulesArray.append(selectedRule!)
+      tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
       print("Rule added: \(selectedRule?.title ?? "")")
       print(selectedRulesArray)
     }
