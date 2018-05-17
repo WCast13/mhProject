@@ -19,7 +19,8 @@ class ViewNoticeAsHTMLController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      print(selectedNotice)
+      selectedNotice?.renderHTML(notice: selectedNotice!)
+      
     }
 
 }

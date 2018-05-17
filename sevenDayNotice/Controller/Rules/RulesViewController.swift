@@ -16,6 +16,8 @@ class RulesViewController: UIViewController {
   let realm = try! Realm()
   var rulesArray: Results<Rule>?
   
+  
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
