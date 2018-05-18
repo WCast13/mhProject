@@ -68,10 +68,12 @@ extension SevenDayNoticeViewController: UITableViewDataSource, UITableViewDelega
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    let destinationVC = segue.destination as! ViewNoticeAsHTMLController
-    
-    if let indexPath = noticeTableView.indexPathForSelectedRow {
-      destinationVC.selectedNotice = noticesArray?[indexPath.row]
+    if segue.identifier == "goToViewNotice" {
+       let destinationVC = segue.destination as! ViewNoticeAsHTMLController
+      
+      if let indexPath = noticeTableView.indexPathForSelectedRow {
+        destinationVC.selectedNotice = noticesArray?[indexPath.row]
+      }
     }
   }
 }

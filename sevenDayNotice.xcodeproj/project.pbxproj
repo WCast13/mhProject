@@ -15,6 +15,9 @@
 		3D0C6F4C207FC13200FBDC50 /* Resident.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0C6F4B207FC13200FBDC50 /* Resident.swift */; };
 		3D39049320AC5FD6006D4736 /* notice.html in Resources */ = {isa = PBXBuildFile; fileRef = 3D39049220AC5FD6006D4736 /* notice.html */; };
 		3D39049520AF0A32006D4736 /* rules.html in Resources */ = {isa = PBXBuildFile; fileRef = 3D39049420AF0A32006D4736 /* rules.html */; };
+		3D39049720AF40CF006D4736 /* output.html in Resources */ = {isa = PBXBuildFile; fileRef = 3D39049620AF40CF006D4736 /* output.html */; };
+		3D39049920AF40FD006D4736 /* bullets.html in Resources */ = {isa = PBXBuildFile; fileRef = 3D39049820AF40FD006D4736 /* bullets.html */; };
+		3D39049B20AF4613006D4736 /* summary.html in Resources */ = {isa = PBXBuildFile; fileRef = 3D39049A20AF4613006D4736 /* summary.html */; };
 		3D4C563C208C1A7B0029815F /* EditResidentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4C563B208C1A7B0029815F /* EditResidentViewController.swift */; };
 		3D4C565E208FCA450029815F /* AddRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4C565D208FCA450029815F /* AddRuleViewController.swift */; };
 		3D4C56602091E9AE0029815F /* EditRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4C565F2091E9AE0029815F /* EditRuleViewController.swift */; };
@@ -41,6 +44,9 @@
 		3D0C6F4B207FC13200FBDC50 /* Resident.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resident.swift; sourceTree = "<group>"; };
 		3D39049220AC5FD6006D4736 /* notice.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = notice.html; sourceTree = "<group>"; };
 		3D39049420AF0A32006D4736 /* rules.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = rules.html; sourceTree = "<group>"; };
+		3D39049620AF40CF006D4736 /* output.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = output.html; sourceTree = "<group>"; };
+		3D39049820AF40FD006D4736 /* bullets.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = bullets.html; sourceTree = "<group>"; };
+		3D39049A20AF4613006D4736 /* summary.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = summary.html; sourceTree = "<group>"; };
 		3D4C563B208C1A7B0029815F /* EditResidentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditResidentViewController.swift; sourceTree = "<group>"; };
 		3D4C565D208FCA450029815F /* AddRuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRuleViewController.swift; sourceTree = "<group>"; };
 		3D4C565F2091E9AE0029815F /* EditRuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRuleViewController.swift; sourceTree = "<group>"; };
@@ -142,7 +148,10 @@
 			isa = PBXGroup;
 			children = (
 				3D39049220AC5FD6006D4736 /* notice.html */,
+				3D39049620AF40CF006D4736 /* output.html */,
 				3D39049420AF0A32006D4736 /* rules.html */,
+				3D39049820AF40FD006D4736 /* bullets.html */,
+				3D39049A20AF4613006D4736 /* summary.html */,
 			);
 			path = "HTML Templete Files";
 			sourceTree = "<group>";
@@ -255,10 +264,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D39049320AC5FD6006D4736 /* notice.html in Resources */,
+				3D39049920AF40FD006D4736 /* bullets.html in Resources */,
 				3D0C6F40207FC05B00FBDC50 /* LaunchScreen.storyboard in Resources */,
 				3D39049520AF0A32006D4736 /* rules.html in Resources */,
 				3D0C6F3D207FC05B00FBDC50 /* Assets.xcassets in Resources */,
+				3D39049B20AF4613006D4736 /* summary.html in Resources */,
 				3D0C6F3B207FC05900FBDC50 /* Main.storyboard in Resources */,
+				3D39049720AF40CF006D4736 /* output.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
