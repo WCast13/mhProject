@@ -14,6 +14,7 @@
 		3D0C6F40207FC05B00FBDC50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0C6F3E207FC05B00FBDC50 /* LaunchScreen.storyboard */; };
 		3D0C6F4C207FC13200FBDC50 /* Resident.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0C6F4B207FC13200FBDC50 /* Resident.swift */; };
 		3D39049320AC5FD6006D4736 /* notice.html in Resources */ = {isa = PBXBuildFile; fileRef = 3D39049220AC5FD6006D4736 /* notice.html */; };
+		3D39049520AF0A32006D4736 /* rules.html in Resources */ = {isa = PBXBuildFile; fileRef = 3D39049420AF0A32006D4736 /* rules.html */; };
 		3D4C563C208C1A7B0029815F /* EditResidentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4C563B208C1A7B0029815F /* EditResidentViewController.swift */; };
 		3D4C565E208FCA450029815F /* AddRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4C565D208FCA450029815F /* AddRuleViewController.swift */; };
 		3D4C56602091E9AE0029815F /* EditRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4C565F2091E9AE0029815F /* EditRuleViewController.swift */; };
@@ -39,6 +40,7 @@
 		3D0C6F41207FC05B00FBDC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D0C6F4B207FC13200FBDC50 /* Resident.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resident.swift; sourceTree = "<group>"; };
 		3D39049220AC5FD6006D4736 /* notice.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = notice.html; sourceTree = "<group>"; };
+		3D39049420AF0A32006D4736 /* rules.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = rules.html; sourceTree = "<group>"; };
 		3D4C563B208C1A7B0029815F /* EditResidentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditResidentViewController.swift; sourceTree = "<group>"; };
 		3D4C565D208FCA450029815F /* AddRuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRuleViewController.swift; sourceTree = "<group>"; };
 		3D4C565F2091E9AE0029815F /* EditRuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRuleViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				3D39049220AC5FD6006D4736 /* notice.html */,
+				3D39049420AF0A32006D4736 /* rules.html */,
 			);
 			path = "HTML Templete Files";
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			files = (
 				3D39049320AC5FD6006D4736 /* notice.html in Resources */,
 				3D0C6F40207FC05B00FBDC50 /* LaunchScreen.storyboard in Resources */,
+				3D39049520AF0A32006D4736 /* rules.html in Resources */,
 				3D0C6F3D207FC05B00FBDC50 /* Assets.xcassets in Resources */,
 				3D0C6F3B207FC05900FBDC50 /* Main.storyboard in Resources */,
 			);
